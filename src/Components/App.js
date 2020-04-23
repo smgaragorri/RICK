@@ -16,6 +16,8 @@ class App extends React.Component {
       name: '',
     };
     this.handleInputData = this.handleInputData.bind(this);
+    this.renderCharacter = this.renderCharacter.bind(this);
+    this.renderCharacterList = this.renderCharacterList.bind(this);
   }
 
   componentDidMount() {
@@ -34,27 +36,39 @@ class App extends React.Component {
     });
   }
 
-  render() {
-    function renderCharacter(props) {
-      console.log(props);
-      return <CharacterDetail />;
-    }
+  renderCharacter(props) {
+    const characterId = parseInt(props.match.params.id);
+    const foundCharacter = this.state.charactersList.find(
+      (character) => character.id === characterId
+    );
+    return <CharacterDetail character={foundCharacter} />;
+  }
 
+  renderCharacterList() {
+    console.log(this.state);
+
+    return (
+      <>
+        <Filter
+          handleInputData={this.handleInputData}
+          value={this.state.name}
+        />
+        <CharacterList
+          charactersList={this.state.charactersList}
+          inputText={this.state.name}
+        />
+      </>
+    );
+  }
+
+  render() {
     return (
       <div className='App'>
         <main>
           <Header />
-          <Filter
-            handleInputData={this.handleInputData}
-            value={this.state.inputText}
-          />
-          <CharacterList
-            charactersList={this.state.charactersList}
-            inputText={this.state.name}
-          />
           <Switch>
-            <Route path='/character/:id' render={renderCharacter} />
-            {/* <CharacterDetail charactersList={this.state.charactersList} /> */}
+            <Route path='/character/:id' render={this.renderCharacter} />
+            <Route path='/' render={this.renderCharacterList} />
           </Switch>
         </main>
       </div>

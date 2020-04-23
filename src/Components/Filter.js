@@ -2,6 +2,7 @@ import React from 'react';
 
 const Filter = (props) => {
   function HandleFilter(ev) {
+    ev.preventDefault();
     props.handleInputData({
       value: ev.currentTarget.value,
       name: ev.currentTarget.name,

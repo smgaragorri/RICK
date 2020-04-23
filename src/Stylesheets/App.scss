@@ -62,7 +62,9 @@ code {
   text-decoration: none;
   color: #0e565f;
 }
-
+.link-detail {
+  background-color: #00afc8;
+}
 .form {
   display: flex;
   justify-content: center;
@@ -77,4 +79,49 @@ code {
     font-size: 18px;
     padding: 5px;
   }
+}
+
+.character-detail {
+  &-card {
+    margin-top: 200px;
+    border-radius: 20px;
+    padding: 25px;
+    background: #00afc8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 100px #51b95a;
+  }
+  &-text {
+    width: 300px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: #00afc8;
+  }
+  &-name {
+    font-size: 26px;
+    background: #00afc8;
+    color: #0e565f;
+  }
+  &-info {
+    background: #00afc8;
+    color: #0e565f;
+    font-size: 16px;
+  }
+  &-icon {
+    background: #00afc8;
+    width: 150px;
+    border-radius: 50px;
+    &-container {
+      background: #00afc8;
+    }
+  }
+}
+.fas {
+  margin-left: 5px;
+  background: #00afc8;
+  color: black;
 }

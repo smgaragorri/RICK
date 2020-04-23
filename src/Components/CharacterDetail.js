@@ -1,28 +1,63 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import portalIcon from '../Stylesheets/portalIcon.png';
+import { Link } from 'react-router-dom';
 
-const CharacterDetail = (props) => {
-  const { id, name, image, specie, status, episode, origin } = props;
+const deadStauts = (status) => {
   return (
-    <div key={id}>
-      <img alt={name} src={image}></img>
-      <h3>{name}</h3>
-      <p>Status: {status}</p>
-      <p>Species: {specie}</p>
-      <p>Origin: {origin}</p>
-      <p>Episodes: {episode}</p>
+    <>
+      {status} <i className='fas fa-cross'></i>
+    </>
+  );
+};
+const CharacterDetail = (props) => {
+  console.log(props);
+  // let status;
+  // if (props.character.status === 'Alive') {
+  //   return (status = `${props.character.status} ${cross} `);
+  // }
+  return (
+    <div className='character-detail-card' key={props.character.id}>
+      <div>
+        <img
+          className='character-detail-img'
+          alt={props.character.name}
+          src={props.character.image}
+        ></img>
+      </div>
+      <div className='character-detail-text'>
+        <h3 className='character-detail-name'>{props.character.name}</h3>
+        <p className='character-detail-info'>
+          Status:{' '}
+          {props.character.status === 'Dead'
+            ? deadStauts(props.character.status)
+            : props.character.status}
+        </p>
+        <p className='character-detail-info'>
+          Species: {props.character.specie}
+        </p>
+        <p className='character-detail-info'>
+          Origin: {props.character.origin}
+        </p>
+        <p className='character-detail-info'>
+          Episodes: {props.character.episode}
+        </p>
+      </div>
+      <div className='character-detail-icon-container'>
+        <Link className='link-detail' to={`/`}>
+          <img
+            className='character-detail-icon'
+            alt='Volver'
+            src={portalIcon}
+          ></img>
+        </Link>
+      </div>
     </div>
   );
 };
 
 CharacterDetail.propTypes = {
-  id: PropTypes.number.isRequired,
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  specie: PropTypes.string.isRequired,
-  origin: PropTypes.string.isRequired,
-  status: PropTypes.string.isRequired,
-  episode: PropTypes.string.isRequired,
+  character: PropTypes.object.isRequired,
 };
 
 export default CharacterDetail;
