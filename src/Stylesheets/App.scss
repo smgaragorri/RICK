@@ -1,0 +1,63 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.list {
+  &-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+  &-el {
+    list-style: none;
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 25px;
+    background-color: #51b95a;
+  }
+  &-img {
+    border-radius: 25px;
+  }
+  &-title {
+    font-size: 22px;
+    margin-top: 20px;
+    background-color: #51b95a;
+  }
+  &-subtitle {
+    background-color: #51b95a;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #0e565f;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  &-input-text {
+    outline: none;
+    height: 20px;
+    background: silver;
+    border: 1px solid #393939;
+    border-radius: 5px 5px 5px 5px;
+    color: #393939;
+    font-size: 18px;
+    padding: 5px;
+  }
+}

@@ -8,16 +8,19 @@ const Filter = (props) => {
     });
   }
   return (
-    <form className='input-text'>
-      <input
-        placeholder='Search'
-        type='text'
-        name='name'
-        key='search'
-        value={props.value}
-        onChange={HandleFilter}
-      ></input>
-    </form>
+    <div className='form'>
+      <form>
+        <input
+          className='form-input-text'
+          placeholder='Search'
+          type='text'
+          name='name'
+          key='search'
+          value={props.value}
+          onChange={HandleFilter}
+        ></input>
+      </form>
+    </div>
   );
 };
 

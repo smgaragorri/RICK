@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 
 const CharacterList = (props) => {
   return (
-    <ul>
+    <ul className='list-container'>
       {props.charactersList
         .filter((character) =>
           character.name.toLowerCase().includes(props.inputText.toLowerCase())
         )
         .map((character) => (
-          <li key={character.id}>
+          <li className='list-el' key={character.id}>
             <CharacterCard
               id={character.id}
               name={character.name}
