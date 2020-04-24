@@ -9,12 +9,12 @@ const Filter = (props) => {
     });
   }
   return (
-    <div className='form'>
+    <div className='form' onSubmit={props.onSubmit}>
       <form>
         <input
           className='form-input-text'
           placeholder='Search'
-          type='text'
+          type='search'
           name='name'
           key='search'
           value={props.value}

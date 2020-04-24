@@ -18,6 +18,7 @@ class App extends React.Component {
     this.handleInputData = this.handleInputData.bind(this);
     this.renderCharacter = this.renderCharacter.bind(this);
     this.renderCharacterList = this.renderCharacterList.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
   componentDidMount() {
@@ -44,6 +45,10 @@ class App extends React.Component {
     return <CharacterDetail character={foundCharacter} />;
   }
 
+  onSubmit(ev) {
+    ev.preventDefault();
+  }
+
   renderCharacterList() {
     console.log(this.state);
 
@@ -52,6 +57,7 @@ class App extends React.Component {
         <Filter
           handleInputData={this.handleInputData}
           value={this.state.name}
+          onSubmit={this.onSubmit}
         />
         <CharacterList
           charactersList={this.state.charactersList}
