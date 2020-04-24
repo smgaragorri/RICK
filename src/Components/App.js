@@ -7,6 +7,8 @@ import Filter from './Filter';
 import Header from './Header';
 
 import CharacterDetail from './CharacterDetail';
+import Loader from './Loader';
+import CharacterNotFound from './CharacterNotFound';
 
 class App extends React.Component {
   constructor(props) {
@@ -42,7 +44,14 @@ class App extends React.Component {
     const foundCharacter = this.state.charactersList.find(
       (character) => character.id === characterId
     );
-    return <CharacterDetail character={foundCharacter} />;
+    if (foundCharacter) {
+      return <CharacterDetail character={foundCharacter} />;
+    } else if (this.state.charactersList.length <= 0) {
+      return <Loader />;
+    } else
+      return (
+        <CharacterNotFound message={'El personaje que buscas no existe.'} />
+      );
   }
 
   onSubmit(ev) {
@@ -52,7 +61,9 @@ class App extends React.Component {
   renderCharacterList() {
     console.log(this.state);
 
-    return (
+    return this.state.charactersList.length === 0 ? (
+      <Loader />
+    ) : (
       <>
         <Filter
           handleInputData={this.handleInputData}

@@ -64,10 +64,15 @@ code {
 .link {
   text-decoration: none;
   color: #0e565f;
+  &-detail {
+    background-color: #00afc8;
+    text-decoration: none;
+    color: #0e565f;
+    font-weight: bold;
+    font-size: 18px;
+  }
 }
-.link-detail {
-  background-color: #00afc8;
-}
+
 .form {
   display: flex;
   justify-content: center;
@@ -90,6 +95,10 @@ code {
   }
   &-img {
     width: 240px;
+  }
+  &-return {
+    text-align: center;
+    background: #00afc8;
   }
 
   &-card {
@@ -123,7 +132,7 @@ code {
   }
   &-icon {
     background: #00afc8;
-    width: 150px;
+    width: 120px;
     border-radius: 50px;
     &-container {
       background: #00afc8;
@@ -140,11 +149,12 @@ code {
 .not-found {
   &-container {
     padding: 30px;
-    width: 80vw;
+    width: 60vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   &-title {
     padding: 20px;
@@ -212,10 +222,16 @@ code {
     &-name {
       font-size: 18px;
     }
+    &-return {
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
     &-icon {
-      width: 100px;
+      display: none;
+      width: 80px;
       margin-top: 10px;
       &-container {
+        justify-content: flex-end;
         width: 180px;
         display: flex;
       }

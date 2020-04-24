@@ -24,7 +24,9 @@ const CharacterList = (props) => {
               </li>
             ))
         ) : (
-          <CharacterNotFound inputText={props.inputText} />
+          <CharacterNotFound
+            message={`No hay ningún personaje que coincida con la palabra '${props.inputText}'`}
+          />
         )}
       </ul>
     </div>

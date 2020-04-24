@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import portalIcon from '../Stylesheets/portalIcon.png';
+import portalIcon from '../Images/portalIcon.png';
 import { Link } from 'react-router-dom';
 
 const deadStatus = (status) => {
@@ -63,6 +63,7 @@ const CharacterDetail = (props) => {
             alt='Volver'
             src={portalIcon}
           ></img>
+          <p className='character-detail-return'> Go Back </p>
         </Link>
       </div>
     </div>
