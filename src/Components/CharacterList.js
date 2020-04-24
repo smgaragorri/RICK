@@ -8,24 +8,26 @@ const CharacterList = (props) => {
     character.name.toLowerCase().includes(props.inputText.toLowerCase())
   );
   return (
-    <ul className='list-container'>
-      {characterListFiltered.length > 0 ? (
-        characterListFiltered
-          .sort((prev, character) => prev.name.localeCompare(character.name))
-          .map((character) => (
-            <li className='list-el' key={character.id}>
-              <CharacterCard
-                id={character.id}
-                name={character.name}
-                image={character.image}
-                specie={character.specie}
-              />
-            </li>
-          ))
-      ) : (
-        <CharacterNotFound inputText={props.inputText} />
-      )}
-    </ul>
+    <div className='list'>
+      <ul className='list-container'>
+        {characterListFiltered.length > 0 ? (
+          characterListFiltered
+            .sort((prev, character) => prev.name.localeCompare(character.name))
+            .map((character) => (
+              <li className='list-el' key={character.id}>
+                <CharacterCard
+                  id={character.id}
+                  name={character.name}
+                  image={character.image}
+                  specie={character.specie}
+                />
+              </li>
+            ))
+        ) : (
+          <CharacterNotFound inputText={props.inputText} />
+        )}
+      </ul>
+    </div>
   );
 };
 

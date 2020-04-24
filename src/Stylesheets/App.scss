@@ -28,12 +28,15 @@ code {
 
 .list {
   &-container {
+    justify-content: center;
+    text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 100vw;
   }
   &-el {
+    margin: 5px;
     list-style: none;
   }
   &-card {
@@ -81,8 +84,16 @@ code {
 }
 
 .character-detail {
+  &-img-container {
+    width: max-content;
+    background: #00afc8;
+  }
+  &-img {
+    width: 240px;
+  }
+
   &-card {
-    margin-top: 200px;
+    margin-top: 130px;
     border-radius: 20px;
     padding: 25px;
     background: #00afc8;
@@ -92,7 +103,7 @@ code {
     box-shadow: 0 0 100px #51b95a;
   }
   &-text {
-    width: 300px;
+    width: 250px;
     margin-left: 30px;
     display: flex;
     justify-content: center;
@@ -143,5 +154,85 @@ code {
   }
   &-img {
     width: 400px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header-logo {
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    &-img {
+      width: 280px;
+    }
+  }
+  .list {
+    &-card {
+      padding: 8px;
+      margin: 8px;
+    }
+    &-img {
+      width: 120px;
+    }
+    &-title {
+      width: 120px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    &-subtitle {
+      font-size: 12px;
+    }
+  }
+
+  .form {
+    margin: 20px 0 20px 0;
+    &-input-text {
+      width: 150px;
+      font-size: 16px;
+    }
+  }
+  .character-detail {
+    &-img {
+      width: 180px;
+      margin-bottom: 15px;
+    }
+    &-card {
+      width: 230px;
+      margin: 25px 20px 20px 20px;
+      align-self: center;
+      align-items: center;
+      justify-items: center;
+      padding: 20px 5px 5px 5px;
+      flex-direction: column;
+      box-shadow: 0 0 50px #45bd4f;
+    }
+    &-text {
+      width: 180px;
+      margin-left: 0px;
+    }
+    &-name {
+      font-size: 18px;
+    }
+    &-icon {
+      width: 100px;
+      margin-top: 10px;
+      &-container {
+        width: 180px;
+        display: flex;
+      }
+    }
+  }
+
+  .not-found {
+    &-container {
+      padding: 10px;
+      width: 80vw;
+      flex-direction: column-reverse;
+    }
+    &-title {
+      font-size: 22px;
+    }
+    &-img {
+      width: 150px;
+    }
   }
 }

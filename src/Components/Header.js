@@ -3,7 +3,7 @@ import img from '../Stylesheets/logo.png';
 
 const Header = () => (
   <header className='header-logo'>
-    <img alt='logo Rick and Morty' src={img}></img>
+    <img className='header-logo-img' alt='logo Rick and Morty' src={img}></img>
   </header>
 );
 

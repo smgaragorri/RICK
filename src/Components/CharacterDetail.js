@@ -22,7 +22,7 @@ const otherStatus = (status) =>
 const CharacterDetail = (props) => {
   return (
     <div className='character-detail-card' key={props.character.id}>
-      <div>
+      <div className='character-detail-img-container'>
         <img
           className='character-detail-img'
           alt={props.character.name}
@@ -32,13 +32,13 @@ const CharacterDetail = (props) => {
       <div className='character-detail-text'>
         <h3 className='character-detail-name'>{props.character.name}</h3>
         <p className='character-detail-info'>
-          Status:
+          Status:{' '}
           {props.character.status === 'Dead'
             ? deadStatus(props.character.status)
             : otherStatus(props.character.status)}
         </p>
         <p className='character-detail-info'>
-          Species:
+          Species:{' '}
           {props.character.specie === 'Human' ? (
             <>
               {props.character.specie} <i class='fas fa-user-alt'></i>
