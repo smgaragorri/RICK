@@ -165,8 +165,50 @@ code {
   &-img {
     width: 400px;
   }
+  &-return {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-return-btn {
+    border-radius: 35px;
+    border: none;
+    width: 240px;
+    height: 60px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    background: #00afc8;
+    outline: none;
+    box-shadow: 0px 8px 15px #34a9bb;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      box-shadow: 0px 10px 10px #03343b;
+      transform: translateY(+3px);
+    }
+  }
 }
 
+.loader {
+  &-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  &-title {
+    padding: 20px;
+    width: 30vw;
+    font-size: 40px;
+    color: #00afc8;
+  }
+  &-img {
+    width: 300px;
+  }
+}
 @media all and (max-width: 768px) {
   .header-logo {
     justify-content: center;
@@ -249,6 +291,21 @@ code {
     }
     &-img {
       width: 150px;
+    }
+  }
+
+  .loader {
+    &-container {
+      flex-direction: column;
+    }
+    &-title {
+      padding: 0px;
+      margin-bottom: 15px;
+      width: 80vw;
+      font-size: 30px;
+    }
+    &-img {
+      width: 200px;
     }
   }
 }

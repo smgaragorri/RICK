@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Filter = (props) => {
   function HandleFilter(ev) {
@@ -23,6 +24,12 @@ const Filter = (props) => {
       </form>
     </div>
   );
+};
+
+Filter.propTypes = {
+  handleInputData: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default Filter;

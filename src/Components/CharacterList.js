@@ -34,7 +34,8 @@ const CharacterList = (props) => {
 };
 
 CharacterList.propTypes = {
-  data: PropTypes.object,
+  charactersList: PropTypes.arrayOf(PropTypes.object).isRequired,
+  inputText: PropTypes.string.isRequired,
 };
 
 export default CharacterList;

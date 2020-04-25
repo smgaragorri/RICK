@@ -1,68 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rick & Morty! :mag_right:
 
-## Available Scripts
+Buscador de personajes de la serie Rick & Morty desarollado con React, JavaScript y mucho cariño.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Guía de inicio rápido
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Necesitarás tener instalado [Node.js](https://nodejs.org/) y arrancar la aplicación con React utilizando los siguientes comandos:
 
-### `npm test`
+`npm install -g create-react-app`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`create-react-app my-react-project`
 
-### `npm run build`
+No olvides instalar las dependencias locales utilizando `npm install`.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Además, necesitarás instalar:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. React Route `npm install --save react-router-dom`
+2. Props tipadas con propTypes `npm install --save prop-types`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para más información sobre cómo arrancar un proyecto con React y sus scripts, visita la siguiente página :arrow_right: [React App](https://github.com/facebook/create-react-app)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Scripts añadidos a este proyecto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+En este directorio, además de todos los Scritps propios de React, se pueden ejecutar:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### `npm run docs`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Comprueba si existe la carpeta Docs y la elimina.
+A continuación crea la carpeta Build y la renombra a Docs para que se pueda publicar en Github Pages.
 
-## Learn More
+#### `npm push docs`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ejecuta de forma automática 'npm run docs'.
+Agrega los cambios de la carpeta Docs a un commit.
+Genera un commit con título "Update docs" y hace el push del commit.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Construido con :hammer_and_wrench:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+1. Visual Studio Code - Editor de código.
+2. Javascript - Lenguaje de programación.
+3. React - Framework para el desarollo de la interfaz.
+4. Git - Para el control de versiones.
+5. Github - Como repositorio remoto.
+6. Github Pages - Para su publicación.
+7. SASS - Para su maquetación.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Otras fuentes :wrench:
 
-### Making a Progressive Web App
+1. [Fontawesome](https://fontawesome.com/) - Para obtener iconos utilizados en diferentes componentes.
+2. [Google Fonts](https://fonts.google.com/) - Para obtener las fuentes de texto.
+3. [Giphy](https://giphy.com/) - Para obtener los gifs utilizados en diferentes componentes.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+---
 
-### Advanced Configuration
+## Autores :fountain_pen:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+[Sara Martín Garagorri](https://www.linkedin.com/in/sara-martin-garagorri/) - Desarollo y documentación - [smgaragorri](https://github.com/smgaragorri) :octocat:
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+> :keyboard: con :heart: por Smgaragorri :blush:
+> Ogullosa Adalaber de la promoción Idelisa :whale:

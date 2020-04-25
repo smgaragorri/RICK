@@ -5,10 +5,9 @@ import { Route, Switch } from 'react-router-dom';
 import CharacterList from './CharacterList';
 import Filter from './Filter';
 import Header from './Header';
-
+import CharacterNotExist from './CharacterNotExist';
 import CharacterDetail from './CharacterDetail';
 import Loader from './Loader';
-import CharacterNotFound from './CharacterNotFound';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,8 +24,6 @@ class App extends React.Component {
 
   componentDidMount() {
     getDataApi().then((data) => {
-      console.log(data);
-
       this.setState({
         charactersList: data,
       });
@@ -50,7 +47,7 @@ class App extends React.Component {
       return <Loader />;
     } else
       return (
-        <CharacterNotFound message={'El personaje que buscas no existe.'} />
+        <CharacterNotExist message={'El personaje que buscas no existe.'} />
       );
   }
 
@@ -59,8 +56,6 @@ class App extends React.Component {
   }
 
   renderCharacterList() {
-    console.log(this.state);
-
     return this.state.charactersList.length === 0 ? (
       <Loader />
     ) : (
