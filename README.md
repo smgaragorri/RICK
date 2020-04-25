@@ -1,9 +1,8 @@
 # Rick & Morty! :mag_right:
 
-Buscador de personajes de la serie Rick & Morty desarollado con React, JavaScript y mucho cariño.
+Buscador de personajes de la serie Rick & Morty desarrollado con React, JavaScript y mucho cariño.
 
----
-
+----
 ## Guía de inicio rápido
 
 Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app).
@@ -23,8 +22,7 @@ Además, necesitarás instalar:
 
 Para más información sobre cómo arrancar un proyecto con React y sus scripts, visita la siguiente página :arrow_right: [React App](https://github.com/facebook/create-react-app)
 
----
-
+----
 ## Scripts añadidos a este proyecto
 
 En este directorio, además de todos los Scritps propios de React, se pueden ejecutar:
@@ -40,31 +38,29 @@ Ejecuta de forma automática 'npm run docs'.
 Agrega los cambios de la carpeta Docs a un commit.
 Genera un commit con título "Update docs" y hace el push del commit.
 
----
-
+----
 ## Construido con :hammer_and_wrench:
 
-1. Visual Studio Code - Editor de código.
-2. Javascript - Lenguaje de programación.
-3. React - Framework para el desarollo de la interfaz.
-4. Git - Para el control de versiones.
-5. Github - Como repositorio remoto.
-6. Github Pages - Para su publicación.
-7. SASS - Para su maquetación.
+1. **Visual Studio Code** - Editor de código.
+2. **Javascript** - Lenguaje de programación.
+3. **React** - Framework para el desarollo de la interfaz.
+4. **Git** - Para el control de versiones.
+5. **Github** - Como repositorio remoto.
+6. **Github Pages** - Para su publicación.
+7. **SASS** - Para añadir estilos.
 
----
-
+----
 ## Otras fuentes :wrench:
 
-1. [Fontawesome](https://fontawesome.com/) - Para obtener iconos utilizados en diferentes componentes.
-2. [Google Fonts](https://fonts.google.com/) - Para obtener las fuentes de texto.
+1. [Rick & Morty API](https://rickandmortyapi.com/) - Para obtener los datos utilizados en los componentes.
 3. [Giphy](https://giphy.com/) - Para obtener los gifs utilizados en diferentes componentes.
+4- [Fontawesome](https://fontawesome.com/) - Para obtener iconos utilizados en diferentes componentes.
 
----
-
+----
 ## Autores :fountain_pen:
 
-[Sara Martín Garagorri](https://www.linkedin.com/in/sara-martin-garagorri/) - Desarollo y documentación - [smgaragorri](https://github.com/smgaragorri) :octocat:
+[Sara Martín Garagorri](https://www.linkedin.com/in/sara-martin-garagorri/) - Desarrollo y documentación - [smgaragorri](https://github.com/smgaragorri) :octocat:
 
-> :keyboard: con :heart: por Smgaragorri :blush:
-> Ogullosa Adalaber de la promoción Idelisa :whale:
+----
+> **:keyboard: con :heart: por Smgaragorri :blush:
+> Ogullosa Adalaber de la promoción Idelisa :whale:**
