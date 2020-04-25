@@ -1,6 +1,6 @@
 # Rick & Morty! :mag_right:
 
-Buscador de personajes de la serie Rick & Morty desarollado con React, JavaScript y mucho cariño.
+Buscador de personajes de la serie Rick & Morty desarrollado con React, JavaScript y mucho cariño.
 
 ---
 
